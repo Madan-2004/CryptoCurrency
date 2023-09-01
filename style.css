@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    position: relative;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.logo .nav{
+    flex: 1;
+}
+
+.logo ul{
+    display: flex;
+}
+
+.logo ul li{
+    list-style-type: none;
+}
+
+.logo ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 200;
+    position: relative;
+}
+
+.logo ul li a:hover{
+    color: #f7941d;
+}
+
+.logo ul li a:hover::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 90%;
+    background-color: #f7941d;
+    bottom: -10px;
+    left: 5%;
+    animation: anim 0.3s linear forwards;
+}
+
+@keyframes anim{
+    0%{
+        width: 0%;
+    }
+}
+
+.lang span{
+    margin-right: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.lang span:hover{
+    color:#f7941d;
+    border-color: #f7941d;
+}
+
+.content{
+    width: 400px;
+    margin-left: 30px;
+    padding: 20px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.content h1 span{
+    color:#f7941d;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.content button{
+    color: #fff;
+    width: 200px;
+    background-color:#f7941d;
+    margin-top: 30px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.content button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 0px 20px #f7941d;
+}
+
+.info{
+    color: #fff;
+}
+
+.currency{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+.currency div img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.currency .in{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info p{
+    font-size: 18px;
+    color: #f7941d;
+}
+
+.info h5{
+    font-size: 15px;
+}
+
